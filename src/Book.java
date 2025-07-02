@@ -10,16 +10,27 @@ public class Book {
         this.authorName = authorName;
         this.publishingYear = publishingYear;
     }
+
     public String getBookTitle() {
         return bookTitle;
     }
+
     public Author getAuthorName() {
         return authorName;
     }
 
+
+    public int getPublishingYear() {
+        return publishingYear;
+    }
+
+    public void setPublishingYear(int publishingYear) {
+        this.publishingYear = publishingYear;
+    }
+
     @Override
     public String toString() {
-        return  bookTitle + " " + authorName +" " + publishingYear ;
+        return bookTitle + " " + authorName + " " + publishingYear;
     }
 
     @Override
@@ -33,12 +44,5 @@ public class Book {
     @Override
     public int hashCode() {
         return Objects.hash(bookTitle, authorName, publishingYear);
-    }
-
-    public int getPublishingYear() {
-        return publishingYear;
-    }
-    public void setPublishingYear(int publishingYear) {
-        this.publishingYear = publishingYear;
     }
 }
